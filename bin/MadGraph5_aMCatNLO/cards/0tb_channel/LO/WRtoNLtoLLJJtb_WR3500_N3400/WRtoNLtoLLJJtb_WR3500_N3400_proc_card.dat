@@ -1,0 +1,8 @@
+import model EffLRSM_NLO
+define p = g u c d s  u~ c~ d~ s~ 
+define j = p
+define ll = e+ e- mu+ mu-
+define nn = n1 n2 
+define jj = b t b~ t~ 
+generate p p > nn ll , nn > ll jj jj 
+output WRtoNLtoLLJJtb_WR3500_N3400 --hel_recycling=False

@@ -1,0 +1,48 @@
+000 (118484.000.000) 2025-04-22 21:25:26 Job submitted from host: <172.30.1.200:9618?addrs=172.30.1.200-9618&alias=tamsa2&noUDP&sock=schedd_1978318_2d52>
+...
+040 (118484.000.000) 2025-04-22 21:25:47 Started transferring input files
+	Transferring to host: <172.30.1.219:9618?addrs=172.30.1.219-9618&alias=node-w19.localdomain&noUDP&sock=slot1_27_10435_26c1_32922>
+...
+001 (118484.000.000) 2025-04-22 21:25:47 Job executing on host: <172.30.1.219:9618?addrs=172.30.1.219-9618&alias=node-w19.localdomain&noUDP&sock=startd_10399_6d72>
+	SlotName: slot1_27@node-w19.localdomain
+	CondorScratchDir = "/var/lib/condor/execute/dir_598295"
+	Cpus = 5
+	Disk = 2048
+	GPUs = 0
+	Memory = 16000
+...
+040 (118484.000.000) 2025-04-22 21:25:47 Finished transferring input files
+...
+006 (118484.000.000) 2025-04-22 21:26:01 Image size of job updated: 38508
+	38  -  MemoryUsage of job (MB)
+	38508  -  ResidentSetSize of job (KB)
+...
+006 (118484.000.000) 2025-04-22 21:31:02 Image size of job updated: 1031936
+	1008  -  MemoryUsage of job (MB)
+	1031936  -  ResidentSetSize of job (KB)
+...
+021 (118484.000.000) 2025-04-22 21:31:35 Error from starter on slot1_27@node-w19.localdomain:
+	CPU usage exceeded request_cpus
+	Code 21 Subcode 101
+...
+004 (118484.000.000) 2025-04-22 21:31:35 Job was evicted.
+	(0) CPU times
+		Usr 0 00:00:35, Sys 0 00:00:14  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	372  -  Run Bytes Received By Job
+	Error from slot1_27@node-w19.localdomain: CPU usage exceeded request_cpus
+	Partitionable Resources :     Usage  Request Allocated 
+	   Cpus                 :      0.20        5         5 
+	   Disk (KB)            : 979289           1      2048 
+	   GPUs                 :                            0 
+	   Memory (MB)          :   1008       16000     16000 
+	   TimeSlotBusy (s)     :    348                       
+...
+012 (118484.000.000) 2025-04-22 21:31:35 Job was held.
+	Error from slot1_27@node-w19.localdomain: CPU usage exceeded request_cpus
+	Code 21 Subcode 101
+...
+009 (118484.000.000) 2025-04-22 21:33:08 Job was aborted.
+	via condor_rm (by user snuintern1)
+...
