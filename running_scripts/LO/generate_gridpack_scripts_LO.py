@@ -9,7 +9,7 @@ for wr in range(wr_start, wr_end + 1, wr_step):
         content = f"""#!/bin/bash
 echo "[INFO] Working in: $PWD"
 git clone https://github.com/HEPchihwan/gen_for_tb_LRSM.git
-cd genproductions/bin/MadGraph5_aMCatNLO/
+cd gen_for_tb_LRSM/bin/MadGraph5_aMCatNLO/
 ls
 ./gridpack_generation.sh WRtoNLtoLLJJtb_{tag} cards/0tb_channel/LO/WRtoNLtoLLJJtb_{tag} pdmv
 ls

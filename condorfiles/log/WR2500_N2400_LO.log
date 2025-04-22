@@ -46,3 +46,111 @@
 009 (118484.000.000) 2025-04-22 21:33:08 Job was aborted.
 	via condor_rm (by user snuintern1)
 ...
+000 (118496.000.000) 2025-04-22 21:40:09 Job submitted from host: <172.30.1.200:9618?addrs=172.30.1.200-9618&alias=tamsa2&noUDP&sock=schedd_1978318_2d52>
+...
+040 (118496.000.000) 2025-04-22 21:40:22 Started transferring input files
+	Transferring to host: <172.30.1.208:9618?addrs=172.30.1.208-9618&alias=node-w8.localdomain&noUDP&sock=slot1_13_9494_21bb_17480>
+...
+001 (118496.000.000) 2025-04-22 21:40:22 Job executing on host: <172.30.1.208:9618?addrs=172.30.1.208-9618&alias=node-w8.localdomain&noUDP&sock=startd_9459_aa6b>
+	SlotName: slot1_13@node-w8.localdomain
+	CondorScratchDir = "/var/lib/condor/execute/dir_323812"
+	Cpus = 5
+	Disk = 2048
+	GPUs = 0
+	Memory = 16000
+...
+040 (118496.000.000) 2025-04-22 21:40:22 Finished transferring input files
+...
+006 (118496.000.000) 2025-04-22 21:40:36 Image size of job updated: 37456
+	37  -  MemoryUsage of job (MB)
+	37456  -  ResidentSetSize of job (KB)
+...
+006 (118496.000.000) 2025-04-22 21:45:37 Image size of job updated: 1053260
+	1024  -  MemoryUsage of job (MB)
+	1047800  -  ResidentSetSize of job (KB)
+...
+006 (118496.000.000) 2025-04-22 21:46:07 Image size of job updated: 1256568
+	1228  -  MemoryUsage of job (MB)
+	1256568  -  ResidentSetSize of job (KB)
+...
+040 (118496.000.000) 2025-04-22 21:46:08 Started transferring output files
+...
+040 (118496.000.000) 2025-04-22 21:46:08 Finished transferring output files
+...
+021 (118496.000.000) 2025-04-22 21:46:08 Error from starter on slot1_13@node-w8.localdomain:
+	STARTER at 172.30.1.208 failed to send file(s) to <172.30.1.200:9618>: |Error: reading from file /var/lib/condor/execute/dir_323812/genproductions/bin/MadGraph5_aMCatNLO/result_WR2500_N2400: (errno 2) No such file or directory; SHADOW failed to receive file(s) from <172.30.1.208:37637>
+	Code 13 Subcode 2
+...
+004 (118496.000.000) 2025-04-22 21:46:08 Job was evicted.
+	(0) CPU times
+		Usr 0 00:00:48, Sys 0 00:00:16  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	680  -  Run Bytes Sent By Job
+	372  -  Run Bytes Received By Job
+	Transfer output files failure at execution point slot1_13@node-w8.localdomain while sending files to access point tamsa2. Details: reading from file /var/lib/condor/execute/dir_323812/genproductions/bin/MadGraph5_aMCatNLO/result_WR2500_N2400: (errno 2) No such file or directory
+	Partitionable Resources :      Usage  Request Allocated 
+	   Cpus                 :       0.18        5         5 
+	   Disk (KB)            : 1216743           1      2048 
+	   GPUs                 :                             0 
+	   Memory (MB)          :    1228       16000     16000 
+	   TimeExecute (s)      :     345                       
+	   TimeSlotBusy (s)     :     346                       
+...
+012 (118496.000.000) 2025-04-22 21:46:08 Job was held.
+	Transfer output files failure at execution point slot1_13@node-w8.localdomain while sending files to access point tamsa2. Details: reading from file /var/lib/condor/execute/dir_323812/genproductions/bin/MadGraph5_aMCatNLO/result_WR2500_N2400: (errno 2) No such file or directory
+	Code 12 Subcode 2
+...
+000 (118512.000.000) 2025-04-22 22:30:31 Job submitted from host: <172.30.1.200:9618?addrs=172.30.1.200-9618&alias=tamsa2&noUDP&sock=schedd_1978318_2d52>
+...
+040 (118512.000.000) 2025-04-22 22:30:50 Started transferring input files
+	Transferring to host: <172.30.1.218:9618?addrs=172.30.1.218-9618&alias=node-w18.localdomain&noUDP&sock=slot1_55_10391_2640_39084>
+...
+040 (118512.000.000) 2025-04-22 22:30:50 Finished transferring input files
+...
+001 (118512.000.000) 2025-04-22 22:30:50 Job executing on host: <172.30.1.218:9618?addrs=172.30.1.218-9618&alias=node-w18.localdomain&noUDP&sock=startd_10356_eedf>
+	SlotName: slot1_55@node-w18.localdomain
+	CondorScratchDir = "/var/lib/condor/execute/dir_2803664"
+	Cpus = 5
+	Disk = 2048
+	GPUs = 0
+	Memory = 16000
+...
+006 (118512.000.000) 2025-04-22 22:31:04 Image size of job updated: 41180
+	41  -  MemoryUsage of job (MB)
+	41180  -  ResidentSetSize of job (KB)
+...
+006 (118512.000.000) 2025-04-22 22:36:05 Image size of job updated: 1291660
+	1262  -  MemoryUsage of job (MB)
+	1291660  -  ResidentSetSize of job (KB)
+...
+006 (118512.000.000) 2025-04-22 22:36:16 Image size of job updated: 1395524
+	1350  -  MemoryUsage of job (MB)
+	1381444  -  ResidentSetSize of job (KB)
+...
+040 (118512.000.000) 2025-04-22 22:36:17 Started transferring output files
+...
+040 (118512.000.000) 2025-04-22 22:36:17 Finished transferring output files
+...
+021 (118512.000.000) 2025-04-22 22:36:17 Error from starter on slot1_55@node-w18.localdomain:
+	STARTER at 172.30.1.218 failed to send file(s) to <172.30.1.200:9618>; SHADOW at 172.30.1.200 - |Error: writing to file /data6/Users/snuintern1/tbchannel/gen_for_tb_LRSM/condorfilesoutput/WR2500_N2400_LO.output: (errno 2) No such file or directory
+	Code 12 Subcode 2
+...
+004 (118512.000.000) 2025-04-22 22:36:17 Job was evicted.
+	(0) CPU times
+		Usr 0 00:00:58, Sys 0 00:00:21  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	87209  -  Run Bytes Sent By Job
+	373  -  Run Bytes Received By Job
+	Transfer output files failure at access point tamsa2 while receiving files from execution point slot1_55@node-w18.localdomain. Details: writing to file /data6/Users/snuintern1/tbchannel/gen_for_tb_LRSM/condorfilesoutput/WR2500_N2400_LO.output: (errno 2) No such file or directory
+	Partitionable Resources :      Usage  Request Allocated 
+	   Cpus                 :       0.25        5         5 
+	   Disk (KB)            : 1326488           1      2048 
+	   GPUs                 :                             0 
+	   Memory (MB)          :    1350       16000     16000 
+	   TimeExecute (s)      :     326                       
+	   TimeSlotBusy (s)     :     327                       
+...
+012 (118512.000.000) 2025-04-22 22:36:17 Job was held.
+	Transfer output files failure at access point tamsa2 while receiving files from execution point slot1_55@node-w18.localdomain. Details: writing to file /data6/Users/snuintern1/tbchannel/gen_for_tb_LRSM/condorfilesoutput/WR2500_N2400_LO.output: (errno 2) No such file or directory
+	Code 12 Subcode 2
+...

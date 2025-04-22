@@ -1,7 +1,7 @@
 #!/bin/bash
 echo "[INFO] Working in: $PWD"
 git clone https://github.com/HEPchihwan/gen_for_tb_LRSM.git
-cd genproductions/bin/MadGraph5_aMCatNLO/
+cd gen_for_tb_LRSM/bin/MadGraph5_aMCatNLO/
 ls
 ./gridpack_generation.sh WRtoNLtoLLJJtb_WR3500_N3400 cards/0tb_channel/LO/WRtoNLtoLLJJtb_WR3500_N3400 pdmv
 ls

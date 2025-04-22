@@ -57,3 +57,107 @@
 
 	Job terminated by itself at 2025-04-22T12:31:22Z (using method 0: OF_ITS_OWN_ACCORD).
 ...
+000 (118495.000.000) 2025-04-22 21:40:09 Job submitted from host: <172.30.1.200:9618?addrs=172.30.1.200-9618&alias=tamsa2&noUDP&sock=schedd_1978318_2d52>
+...
+040 (118495.000.000) 2025-04-22 21:40:22 Started transferring input files
+	Transferring to host: <172.30.1.208:9618?addrs=172.30.1.208-9618&alias=node-w8.localdomain&noUDP&sock=slot1_11_9494_21bb_17479>
+...
+040 (118495.000.000) 2025-04-22 21:40:22 Finished transferring input files
+...
+001 (118495.000.000) 2025-04-22 21:40:22 Job executing on host: <172.30.1.208:9618?addrs=172.30.1.208-9618&alias=node-w8.localdomain&noUDP&sock=startd_9459_aa6b>
+	SlotName: slot1_11@node-w8.localdomain
+	CondorScratchDir = "/var/lib/condor/execute/dir_323811"
+	Cpus = 5
+	Disk = 2048
+	GPUs = 0
+	Memory = 16000
+...
+006 (118495.000.000) 2025-04-22 21:40:36 Image size of job updated: 47364
+	47  -  MemoryUsage of job (MB)
+	47364  -  ResidentSetSize of job (KB)
+...
+006 (118495.000.000) 2025-04-22 21:45:35 Image size of job updated: 1373612
+	1228  -  MemoryUsage of job (MB)
+	1256572  -  ResidentSetSize of job (KB)
+...
+040 (118495.000.000) 2025-04-22 21:45:35 Started transferring output files
+...
+040 (118495.000.000) 2025-04-22 21:45:35 Finished transferring output files
+...
+021 (118495.000.000) 2025-04-22 21:45:35 Error from starter on slot1_11@node-w8.localdomain:
+	STARTER at 172.30.1.208 failed to send file(s) to <172.30.1.200:9618>: |Error: reading from file /var/lib/condor/execute/dir_323811/genproductions/bin/MadGraph5_aMCatNLO/result_WR2000_N1900: (errno 2) No such file or directory; SHADOW failed to receive file(s) from <172.30.1.208:45549>
+	Code 13 Subcode 2
+...
+004 (118495.000.000) 2025-04-22 21:45:35 Job was evicted.
+	(0) CPU times
+		Usr 0 00:00:44, Sys 0 00:00:15  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	680  -  Run Bytes Sent By Job
+	372  -  Run Bytes Received By Job
+	Transfer output files failure at execution point slot1_11@node-w8.localdomain while sending files to access point tamsa2. Details: reading from file /var/lib/condor/execute/dir_323811/genproductions/bin/MadGraph5_aMCatNLO/result_WR2000_N1900: (errno 2) No such file or directory
+	Partitionable Resources :      Usage  Request Allocated 
+	   Cpus                 :       0.17        5         5 
+	   Disk (KB)            : 1216746           1      2048 
+	   GPUs                 :                             0 
+	   Memory (MB)          :    1228       16000     16000 
+	   TimeExecute (s)      :     313                       
+	   TimeSlotBusy (s)     :     313                       
+...
+012 (118495.000.000) 2025-04-22 21:45:35 Job was held.
+	Transfer output files failure at execution point slot1_11@node-w8.localdomain while sending files to access point tamsa2. Details: reading from file /var/lib/condor/execute/dir_323811/genproductions/bin/MadGraph5_aMCatNLO/result_WR2000_N1900: (errno 2) No such file or directory
+	Code 12 Subcode 2
+...
+000 (118511.000.000) 2025-04-22 22:30:30 Job submitted from host: <172.30.1.200:9618?addrs=172.30.1.200-9618&alias=tamsa2&noUDP&sock=schedd_1978318_2d52>
+...
+040 (118511.000.000) 2025-04-22 22:30:31 Started transferring input files
+	Transferring to host: <172.30.1.221:9618?addrs=172.30.1.221-9618&alias=node-w21.localdomain&noUDP&sock=slot1_2_10398_14e0_39249>
+...
+040 (118511.000.000) 2025-04-22 22:30:31 Finished transferring input files
+...
+001 (118511.000.000) 2025-04-22 22:30:31 Job executing on host: <172.30.1.221:9618?addrs=172.30.1.221-9618&alias=node-w21.localdomain&noUDP&sock=startd_10362_0c71>
+	SlotName: slot1_2@node-w21.localdomain
+	CondorScratchDir = "/var/lib/condor/execute/dir_2728238"
+	Cpus = 5
+	Disk = 2048
+	GPUs = 0
+	Memory = 16000
+...
+006 (118511.000.000) 2025-04-22 22:30:44 Image size of job updated: 54804
+	54  -  MemoryUsage of job (MB)
+	54804  -  ResidentSetSize of job (KB)
+...
+006 (118511.000.000) 2025-04-22 22:35:44 Image size of job updated: 1098096
+	1073  -  MemoryUsage of job (MB)
+	1098096  -  ResidentSetSize of job (KB)
+...
+006 (118511.000.000) 2025-04-22 22:36:43 Image size of job updated: 1381440
+	1350  -  MemoryUsage of job (MB)
+	1381440  -  ResidentSetSize of job (KB)
+...
+040 (118511.000.000) 2025-04-22 22:36:43 Started transferring output files
+...
+040 (118511.000.000) 2025-04-22 22:36:43 Finished transferring output files
+...
+021 (118511.000.000) 2025-04-22 22:36:43 Error from starter on slot1_2@node-w21.localdomain:
+	STARTER at 172.30.1.221 failed to send file(s) to <172.30.1.200:9618>; SHADOW at 172.30.1.200 - |Error: writing to file /data6/Users/snuintern1/tbchannel/gen_for_tb_LRSM/condorfilesoutput/WR2000_N1900_LO.output: (errno 2) No such file or directory
+	Code 12 Subcode 2
+...
+004 (118511.000.000) 2025-04-22 22:36:43 Job was evicted.
+	(0) CPU times
+		Usr 0 00:01:08, Sys 0 00:00:27  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	87165  -  Run Bytes Sent By Job
+	373  -  Run Bytes Received By Job
+	Transfer output files failure at access point tamsa2 while receiving files from execution point slot1_2@node-w21.localdomain. Details: writing to file /data6/Users/snuintern1/tbchannel/gen_for_tb_LRSM/condorfilesoutput/WR2000_N1900_LO.output: (errno 2) No such file or directory
+	Partitionable Resources :      Usage  Request Allocated 
+	   Cpus                 :       0.27        5         5 
+	   Disk (KB)            : 1326485           1      2048 
+	   GPUs                 :                             0 
+	   Memory (MB)          :    1350       16000     16000 
+	   TimeExecute (s)      :     372                       
+	   TimeSlotBusy (s)     :     372                       
+...
+012 (118511.000.000) 2025-04-22 22:36:43 Job was held.
+	Transfer output files failure at access point tamsa2 while receiving files from execution point slot1_2@node-w21.localdomain. Details: writing to file /data6/Users/snuintern1/tbchannel/gen_for_tb_LRSM/condorfilesoutput/WR2000_N1900_LO.output: (errno 2) No such file or directory
+	Code 12 Subcode 2
+...
