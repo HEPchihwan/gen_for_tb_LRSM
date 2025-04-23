@@ -3,7 +3,7 @@ import re
 import pandas as pd
 
 # 분석할 경로
-base_path = "/data6/Users/snuintern1/genproductions/data"
+base_path = "/data6/Users/snuintern1/tbchannel/gen_for_tb_LRSM/condorfiles/output"
 
 # cross-section 파싱용 정규식
 xsec_pattern = re.compile(r"original cross-section:\s*([0-9eE.+-]+)")
@@ -15,10 +15,10 @@ results = {}
 
 # 파일 순회
 for fname in os.listdir(base_path):
-    if not fname.endswith(".out"):
+    if not fname.endswith(".output"):
         continue
 
-    match = re.match(r"WR(\d+)_N(\d+)_(LO|NLO)\.out", fname)
+    match = re.match(r"WR(\d+)_N(\d+)_(LO|NLO)\.output", fname)
     if not match:
         continue
 

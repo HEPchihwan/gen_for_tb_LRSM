@@ -1,8 +1,10 @@
 import pandas as pd
 import numpy as np
+import matplotlib
+matplotlib.use('Agg') 
 import matplotlib.pyplot as plt
 import re
-import seaborn as sns
+#import seaborn as sns
 from matplotlib.ticker import LogLocator
 
 # Load CSV (replace this path with your actual one)
@@ -26,22 +28,22 @@ for mode in ['LO', 'NLO']:
 
 # Define target N values
 def get_targets(wr):
-    return [100, wr // 2, wr - 100]
+    return [200, wr // 2, wr - 100]
 
 # Prepare plot data
-kfactor_lines = {100: [], 'WR/2': [], 'WR -100': []}
-x_vals = {100: [], 'WR/2': [], 'WR -100': []}
-lo_lines = {100: [], 'WR/2': [], 'WR -100': []}
-nlo_lines = {100: [], 'WR/2': [], 'WR -100': []}
-lo_errors = {100: [], 'WR/2': [], 'WR -100': []}
-nlo_errors = {100: [], 'WR/2': [], 'WR -100': []}
-pdf_errors_lo = {100: [], 'WR/2': [], 'WR -100': []}
-pdf_errors_nlo = {100: [], 'WR/2': [], 'WR -100': []}
+kfactor_lines = {200: [], 'WR/2': [], 'WR -100': []}
+x_vals = {200: [], 'WR/2': [], 'WR -100': []}
+lo_lines = {200: [], 'WR/2': [], 'WR -100': []}
+nlo_lines = {200: [], 'WR/2': [], 'WR -100': []}
+lo_errors = {200: [], 'WR/2': [], 'WR -100': []}
+nlo_errors = {200: [], 'WR/2': [], 'WR -100': []}
+pdf_errors_lo = {200: [], 'WR/2': [], 'WR -100': []}
+pdf_errors_nlo = {200: [], 'WR/2': [], 'WR -100': []}
 kfactor_with_error = {'WR': [], 'N': [], 'kfactor': [], 'pdf_err_low': [], 'pdf_err_high': []}
 
 
 for wr in sorted(df['WR'].unique()):
-    for n_type, n_val in zip([100, 'WR/2', 'WR -100'], get_targets(wr)):
+    for n_type, n_val in zip([200, 'WR/2', 'WR -100'], get_targets(wr)):
         row = df[(df['WR'] == wr) & (df['N'] == n_val)]
         if not row.empty:
             row = row.iloc[0]
@@ -80,7 +82,7 @@ for wr in sorted(df['WR'].unique()):
                 nlo_lines[n_type].append(None)
                 nlo_errors[n_type].append([0, 0])
                 pdf_errors_nlo[n_type].append([0, 0])
-    for n in [100, wr // 2, wr - 100]:
+    for n in [200, wr // 2, wr - 100]:
         row = df[(df['WR'] == wr) & (df['N'] == n)]
         if not row.empty:
             row = row.iloc[0]
@@ -105,21 +107,21 @@ for wr in sorted(df['WR'].unique()):
 
 # ----------------------------- Plotting -----------------------------------
 # First Plot: K-factor
-plt.figure(figsize=(10, 6))
-for label, color in zip([100, 'WR/2', 'WR -100'], ['red', 'green', 'blue']):
-    if x_vals[label]:
-        plt.plot(x_vals[label], kfactor_lines[label], label=f'N={label}', color=color)
-plt.xlabel('WR [GeV]')
-plt.ylabel('K-factor (NLO/LO)')
-plt.title('K-factor')
-plt.legend()
-plt.grid(True)
-plt.tight_layout()
-plt.savefig("../result/20000event/plot1_kfactor.png")
+#plt.figure(figsize=(10, 6))
+#for label, color in zip([100, 'WR/2', 'WR -100'], ['red', 'green', 'blue']):
+#    if x_vals[label]:
+#        plt.plot(x_vals[label], kfactor_lines[label], label=f'N={label}', color=color)
+#plt.xlabel('WR [GeV]')
+#plt.ylabel('K-factor (NLO/LO)')
+#plt.title('K-factor')
+#plt.legend()
+#plt.grid(True)
+#plt.tight_layout()
+#plt.savefig("../result/20000event/plot1_kfactor.png")
 
 # Second Plot: LO & NLO Cross-sections (log y)
 plt.figure(figsize=(10, 6))
-for label, color in zip([100, 'WR/2', 'WR -100'], ['red', 'green', 'blue']):
+for label, color in zip([200, 'WR/2', 'WR -100'], ['red', 'green', 'blue']):
     if x_vals[label]:
         plt.plot(x_vals[label], lo_lines[label], label=f'LO N={label}', marker='$L$', linestyle='--', color=color)
         plt.plot(x_vals[label], nlo_lines[label], label=f'NLO N={label}', marker='$N$', linestyle='-', color=color)
@@ -135,7 +137,7 @@ plt.savefig("../result/20000event/plot2_crosssection_log.png")
 # Third Plot: LO with scale/pdf errors
 plt.figure(figsize=(10, 6))
 delta = 40 
-for label, color in zip([100, 'WR/2', 'WR -100'], ['red', 'green', 'blue']):
+for label, color in zip([200, 'WR/2', 'WR -100'], ['red', 'green', 'blue']):
     xs = np.array(x_vals[label])  
     ys = np.array(lo_lines[label])
     errs = np.array(lo_errors[label]).T
@@ -152,7 +154,7 @@ plt.gca().yaxis.set_major_locator(LogLocator(base=10.0, subs=(1.0,), numticks=10
 plt.grid(True)
 plt.tight_layout()
 plt.savefig("../result/20000event/plot3_lo_with_uncertainties.png")
-
+'''
 # Fourth Plot: NLO with scale/pdf errors
 plt.figure(figsize=(10, 6))
 for label, color in zip([100, 'WR/2', 'WR -100'], ['red', 'green', 'blue']):
@@ -240,3 +242,4 @@ plt.yticks(ticks=tick_indices, labels=tick_labels)
 
 
 plt.savefig("../result/20000event/plot7_kfactor_heatmap.png")
+'''
