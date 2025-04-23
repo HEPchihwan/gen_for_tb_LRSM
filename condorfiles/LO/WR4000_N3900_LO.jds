@@ -1,7 +1,7 @@
 executable = /data6/Users/snuintern1/tbchannel/gen_for_tb_LRSM/running_scripts/LO/WR4000_N3900_LO.sh
 log = /data6/Users/snuintern1/tbchannel/gen_for_tb_LRSM/condorfiles/log/WR4000_N3900_LO.log
-output = /data6/Users/snuintern1/tbchannel/gen_for_tb_LRSM/condorfilesoutput/WR4000_N3900_LO.output
-error = /data6/Users/snuintern1/tbchannel/gen_for_tb_LRSM/condorfileserror/WR4000_N3900_LO.error
+output = /data6/Users/snuintern1/tbchannel/gen_for_tb_LRSM/condorfiles/output/WR4000_N3900_LO.output
+error = /data6/Users/snuintern1/tbchannel/gen_for_tb_LRSM/condorfiles/error/WR4000_N3900_LO.error
 getenv = True
 should_transfer_files = yes
 RequestCpus = 5
