@@ -1,0 +1,14 @@
+executable = /data6/Users/snuintern1/tbchannel/gen_for_tb_LRSM/running_scripts/LO/WR1000_N500_LO.sh
+log = /data6/Users/snuintern1/tbchannel/gen_for_tb_LRSM/condorfiles/log/WR1000_N500_LO.log
+output = /data6/Users/snuintern1/tbchannel/gen_for_tb_LRSM/condorfiles/output/WR1000_N500_LO.output
+error = /data6/Users/snuintern1/tbchannel/gen_for_tb_LRSM/condorfiles/error/WR1000_N500_LO.error
+getenv = True
+should_transfer_files = yes
+RequestCpus = 5
+RequestMemory = 16000
+transfer_output_files = gen_for_tb_LRSM/bin/MadGraph5_aMCatNLO/result_WR1000_N500
+queue 
+
+
+
+

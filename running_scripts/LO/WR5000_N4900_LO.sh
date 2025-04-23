@@ -10,4 +10,11 @@ ls
 mv *.tar.xz result_WR5000_N4900
 mv *.log result_WR5000_N4900
 cd result_WR5000_N4900
+tar -xavf *.tar.xz
+FILE="runcmsgrid.sh"
+sed -i 's/5000\*9/20000*9/g' "$FILE"
+sed -i 's/: 5000 )/: 20000 )/g' "$FILE"
 
+sed -i 's/10000\*9/20000*9/g' "$FILE"
+sed -i 's/: 10000 )/: 20000 )/g' "$FILE"
+./runcmsgrid.sh 20000 234567

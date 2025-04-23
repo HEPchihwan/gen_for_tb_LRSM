@@ -39,5 +39,5 @@ while (WRMASS <= WRMASSEND):
                     custonew.write(f"set param_card mass 34 {WRMASS}\n")
                 else:
                     custonew.write(line)
-        NMASS = NMASS + 100
-    WRMASS = WRMASS + 500
+            NMASS = NMASS + 100
+        WRMASS = WRMASS + 500
