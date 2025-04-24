@@ -4,7 +4,7 @@ import matplotlib
 matplotlib.use('Agg') 
 import matplotlib.pyplot as plt
 import re
-#import seaborn as sns
+import seaborn as sns
 from matplotlib.ticker import LogLocator
 
 # Load CSV (replace this path with your actual one)
@@ -208,7 +208,7 @@ plt.grid(True)
 plt.legend()
 plt.tight_layout()
 plt.savefig("../result/20000event/plot5_kfactor_pdf_band.png")
-
+'''
 #------------------------- 2d plot 
 
 # Placeholder CSV path (update this with actual file path)
@@ -217,20 +217,23 @@ df = pd.read_csv(csv_path)
 
 # K-factor 계산
 df = df[df['LO_crosssection'] != 0].copy()
-df['K factor'] = df['NLO_crosssection'] / df['LO_crosssection']
+df['cross_section'] =  df['LO_crosssection']
 
 # 열 이름 정리 (pivot용)
 df = df.rename(columns={'WR': 'WR mass', 'N': 'N mass'})
 
 # 피벗 테이블 생성
-heatmap_data = df.pivot(index='N mass', columns='WR mass', values='K factor')
+heatmap_data = df.pivot(index='N mass', columns='WR mass', values='cross_section')
 
 # 히트맵 그리기
+# 로그 스케일로 변환 (0 값 방지 위해 작은 수 추가 또는 filter)
+log_heatmap_data = np.log10(heatmap_data.replace(0, np.nan))
+
 plt.figure(figsize=(10, 8))
-sns.heatmap(heatmap_data, cmap="viridis")
+sns.heatmap(log_heatmap_data, cmap="viridis")
 plt.xlabel("WR mass [GeV]")
 plt.ylabel("N mass [GeV]")
-plt.title("K factor Heatmap")
+plt.title("log10(Cross-section [pb])")
 plt.tight_layout()
 plt.gca().invert_yaxis()
 
@@ -240,6 +243,4 @@ tick_indices = [i for i, val in enumerate(n_mass_values) if val % 500 == 0]
 tick_labels = [n_mass_values[i] for i in tick_indices]
 plt.yticks(ticks=tick_indices, labels=tick_labels)
 
-
-plt.savefig("../result/20000event/plot7_kfactor_heatmap.png")
-'''
+plt.savefig("../result/20000event/plot7_xsec_2dplot_log.png")
