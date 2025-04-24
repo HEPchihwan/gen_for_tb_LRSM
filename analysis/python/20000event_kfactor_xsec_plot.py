@@ -51,7 +51,7 @@ for wr in sorted(df['WR'].unique()):
             nlo = row['NLO_crosssection']
             if lo and nlo and lo != 0:
                 x_vals[n_type].append(wr)
-                kfactor_lines[n_type].append(nlo / lo)
+                #kfactor_lines[n_type].append(nlo / lo)
 
             if lo:
                 lo_lines[n_type].append(lo)
@@ -124,10 +124,10 @@ plt.figure(figsize=(10, 6))
 for label, color in zip([200, 'WR/2', 'WR -100'], ['red', 'green', 'blue']):
     if x_vals[label]:
         plt.plot(x_vals[label], lo_lines[label], label=f'LO N={label}', marker='$L$', linestyle='--', color=color)
-        plt.plot(x_vals[label], nlo_lines[label], label=f'NLO N={label}', marker='$N$', linestyle='-', color=color)
+        #plt.plot(x_vals[label], nlo_lines[label], label=f'NLO N={label}', marker='$N$', linestyle='-', color=color)
 plt.xlabel('WR [GeV]')
 plt.ylabel('Cross-section [pb]')
-plt.title('Cross-section vs WR (log scale)')
+plt.title('Cross-section(log scale)')
 plt.yscale('log')
 plt.legend()
 plt.grid(True)
