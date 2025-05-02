@@ -229,3 +229,71 @@
 	Transfer output files failure at access point tamsa2 while receiving files from execution point slot1_7@node-w8.localdomain. Details: writing to file /data6/Users/snuintern1/tbchannel/gen_for_tb_LRSM/condorfilesoutput/WR5000_N4900_LO.output: (errno 2) No such file or directory
 	Code 12 Subcode 2
 ...
+000 (123866.000.000) 2025-04-23 18:40:57 Job submitted from host: <172.30.1.200:9618?addrs=172.30.1.200-9618&alias=tamsa2&noUDP&sock=schedd_1978318_2d52>
+...
+009 (118529.000.000) 2025-04-23 18:48:04 Job was aborted.
+	via condor_rm (by user snuintern1)
+
+	Job terminated by itself at 2025-04-22T13:55:42Z (using method 0: OF_ITS_OWN_ACCORD).
+...
+040 (123866.000.000) 2025-04-23 19:50:05 Started transferring input files
+	Transferring to host: <172.30.1.219:9618?addrs=172.30.1.219-9618&alias=node-w19.localdomain&noUDP&sock=slot1_1_10435_26c1_35543>
+...
+001 (123866.000.000) 2025-04-23 19:50:05 Job executing on host: <172.30.1.219:9618?addrs=172.30.1.219-9618&alias=node-w19.localdomain&noUDP&sock=startd_10399_6d72>
+	SlotName: slot1_1@node-w19.localdomain
+	CondorScratchDir = "/var/lib/condor/execute/dir_2515841"
+	Cpus = 5
+	Disk = 2048
+	GPUs = 0
+	Memory = 16000
+...
+040 (123866.000.000) 2025-04-23 19:50:05 Finished transferring input files
+...
+006 (123866.000.000) 2025-04-23 19:50:19 Image size of job updated: 40108
+	40  -  MemoryUsage of job (MB)
+	40108  -  ResidentSetSize of job (KB)
+...
+006 (123866.000.000) 2025-04-23 19:55:20 Image size of job updated: 502236
+	449  -  MemoryUsage of job (MB)
+	459404  -  ResidentSetSize of job (KB)
+...
+006 (123866.000.000) 2025-04-23 20:00:21 Image size of job updated: 868540
+	802  -  MemoryUsage of job (MB)
+	821244  -  ResidentSetSize of job (KB)
+...
+006 (123866.000.000) 2025-04-23 20:05:22 Image size of job updated: 1320100
+	1290  -  MemoryUsage of job (MB)
+	1320100  -  ResidentSetSize of job (KB)
+...
+006 (123866.000.000) 2025-04-23 20:10:22 Image size of job updated: 3614868
+	1811  -  MemoryUsage of job (MB)
+	1854324  -  ResidentSetSize of job (KB)
+...
+006 (123866.000.000) 2025-04-23 20:12:59 Image size of job updated: 3619676
+	2118  -  MemoryUsage of job (MB)
+	2168364  -  ResidentSetSize of job (KB)
+...
+040 (123866.000.000) 2025-04-23 20:12:59 Started transferring output files
+...
+040 (123866.000.000) 2025-04-23 20:13:21 Finished transferring output files
+...
+005 (123866.000.000) 2025-04-23 20:13:22 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:08:53, Sys 0 00:00:57  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:08:53, Sys 0 00:00:57  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	588695808  -  Run Bytes Sent By Job
+	598  -  Run Bytes Received By Job
+	588695808  -  Total Bytes Sent By Job
+	598  -  Total Bytes Received By Job
+	Partitionable Resources :      Usage  Request Allocated 
+	   Cpus                 :       0.87        5         5 
+	   Disk (KB)            : 2090591           1      2048 
+	   GPUs                 :                             0 
+	   Memory (MB)          :    2118       16000     16000 
+	   TimeExecute (s)      :    1374                       
+	   TimeSlotBusy (s)     :    1397                       
+
+	Job terminated of its own accord at 2025-04-23T11:12:59Z with exit-code 0.
+...

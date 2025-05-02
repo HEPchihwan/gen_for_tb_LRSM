@@ -3,7 +3,10 @@ __init__.py
 additional.condorConf
 # 로그, 출력, 에러 파일 무시
 *.log
-*.out
-*.err
+*.output
+*.error
 *.tar.xz
-
+condorfiles/LO/
+*.lhe
+*_LO.sh
+*.jds

@@ -1,0 +1,8 @@
+1       u d~ > e- b~ t e+,c s~ > e- b~ t e+
+mirror  d~ u > e- b~ t e+,s~ c > e- b~ t e+
+2       u d~ > e+ b t~ e+,c s~ > e+ b t~ e+
+mirror  d~ u > e+ b t~ e+,s~ c > e+ b t~ e+
+3       d u~ > e- b~ t e-,s c~ > e- b~ t e-
+mirror  u~ d > e- b~ t e-,c~ s > e- b~ t e-
+4       d u~ > e+ b t~ e-,s c~ > e+ b t~ e-
+mirror  u~ d > e+ b t~ e-,c~ s > e+ b t~ e-

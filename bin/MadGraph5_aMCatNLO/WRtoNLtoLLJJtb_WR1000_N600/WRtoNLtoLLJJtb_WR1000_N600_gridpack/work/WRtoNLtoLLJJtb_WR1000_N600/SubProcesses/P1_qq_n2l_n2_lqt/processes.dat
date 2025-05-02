@@ -1,0 +1,8 @@
+1       u d~ > mu- b~ t mu+,c s~ > mu- b~ t mu+
+mirror  d~ u > mu- b~ t mu+,s~ c > mu- b~ t mu+
+2       u d~ > mu+ b t~ mu+,c s~ > mu+ b t~ mu+
+mirror  d~ u > mu+ b t~ mu+,s~ c > mu+ b t~ mu+
+3       d u~ > mu- b~ t mu-,s c~ > mu- b~ t mu-
+mirror  u~ d > mu- b~ t mu-,c~ s > mu- b~ t mu-
+4       d u~ > mu+ b t~ mu-,s c~ > mu+ b t~ mu-
+mirror  u~ d > mu+ b t~ mu-,c~ s > mu+ b t~ mu-
