@@ -78,11 +78,11 @@ class MassRecoFromLHE:
                 if p["pid"] == 34:
                     m1, m2 = p["mother1"], p["mother2"]
                     parent_statuses = []
-                    for mid in (m1, m2):
+                    for mid in (m1, m2): 
                         parent = next((pp for pp in particles if pp["idx"] == mid), None)
                         if parent:
                             parent_statuses.append(parent["status"])
-                    if any(s == -1 for s in parent_statuses):
+                    if any(s == -1 for s in parent_statuses): # onshell WR 중에서 first 꺼 골라내기 
                         mass2 = p["E"]**2 - (p["px"]**2 + p["py"]**2 + p["pz"]**2)
                         mass = np.sqrt(mass2) if mass2 > 0 else 0
                         self.on_shell_count += 1
