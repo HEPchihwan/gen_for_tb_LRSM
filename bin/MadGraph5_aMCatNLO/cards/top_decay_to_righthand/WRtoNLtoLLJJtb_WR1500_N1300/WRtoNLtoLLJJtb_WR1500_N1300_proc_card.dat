@@ -7,5 +7,5 @@ define nn = n1 n2
 define bot = b b~ 
 define top = t t~  
 define wr = wr+ wr- 
-generate p p > nn ll,(nn > ll top bot,top > wr bot)
+generate p p > nn ll,(nn > ll top bot,(top > wr bot))
 output WRtoNLtoLLJJtb_WR1500_N1300 --hel_recycling=False
