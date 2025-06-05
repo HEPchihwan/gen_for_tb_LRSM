@@ -1,0 +1,9 @@
+import model EffLRSM_NLO
+define p = g u c d s  u~ c~ d~ s~ 
+define j = p
+define ll = e+ e- mu+ mu-
+define nn = n1 n2 
+define bot = b b~ 
+define top = t t~  
+generate p p > nn ll,(nn > ll top bot)
+output WRtoNLtoLLJJtb_WR1000_N100 --hel_recycling=False
