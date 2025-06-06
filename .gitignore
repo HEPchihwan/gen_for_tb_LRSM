@@ -6,7 +6,7 @@ additional.condorConf
 *.output
 *.error
 *.tar.xz
-condorfiles/LO/
+condorfiles/
 *.lhe
 *_LO.sh
 *.jds
