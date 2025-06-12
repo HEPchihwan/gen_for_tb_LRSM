@@ -1,0 +1,12 @@
+import model EffLRSM_NLO
+define p = g u c d s  u~ c~ d~ s~ 
+define quark = u c d s u~ c~ d~ s~ 
+define j = p
+define ll = e+ e- mu+ mu-
+define nn = n1 n2 
+define bot = b b~ 
+define top = t t~  
+define wr = wr+ wr- 
+define w = w+ w-
+generate p p > nn ll,(nn > ll top bot,(top > quark quark bot)) / w
+output WRtoNLtoLLJJtb_WR5500_N2300 --hel_recycling=False
