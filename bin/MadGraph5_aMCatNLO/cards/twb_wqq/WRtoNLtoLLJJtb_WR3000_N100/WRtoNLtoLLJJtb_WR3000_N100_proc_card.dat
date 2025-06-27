@@ -5,4 +5,4 @@ define w = w+ w-
 define top = t t~
 define bot = b b~ 
 generate top > w bot , bot > j j 
-width_WRtoNLtoLLJJtb_WR3000_N100 
+compute_widths top
