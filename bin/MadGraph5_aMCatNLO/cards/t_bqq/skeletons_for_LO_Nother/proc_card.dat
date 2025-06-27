@@ -1,0 +1,7 @@
+import model EffLRSM_NLO
+define p = g u c d s  u~ c~ d~ s~ 
+define j = p
+define t = t t~
+define b = b b~
+generate t > b j j 
+###OUTPUT

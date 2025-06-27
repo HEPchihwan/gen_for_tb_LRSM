@@ -1,0 +1,8 @@
+import model EffLRSM_NLO
+define p = g u c d s  u~ c~ d~ s~ 
+define j = p
+define t = t t~
+define b = b b~
+define w = w+ w- 
+generate t > w b , b > j j 
+width_WRtoNLtoLLJJtb_WR3000_N100 
