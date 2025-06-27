@@ -4,4 +4,4 @@ define j = p
 define top = t t~
 define bot = b b~
 generate top > bot j j 
-compute_widths top
+output WRtoNLtoLLJJtb_WR5000_N100 --hel_recycling=False
