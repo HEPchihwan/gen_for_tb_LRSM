@@ -4,5 +4,5 @@ define j = p
 define w = w+ w-
 define top = t t~
 define bot = b b~ 
-generate top > w bot , bot > j j 
+generate top > w bot , w > j j 
 compute_widths top
