@@ -29,7 +29,7 @@ for WRMASS in WR_TO_N:
         with open(custolines_path, "r") as f_in, open(f"{DIRNAME}/{DIRNAME}_customizecards.dat", "w") as f_out:
             for line in f_in:
                 if "###SETMASS9900012" in line:
-                    f_out.write(f"set param_card mass 9900012 {NMASS}\n")
+                    f_out.write(f"set param_card mass 9900012 999999\n")
                 elif "###SETMASS9900014" in line:
                     f_out.write(f"set param_card mass 9900014 {NMASS}\n")
                 elif "###SETMASS9900016" in line:
