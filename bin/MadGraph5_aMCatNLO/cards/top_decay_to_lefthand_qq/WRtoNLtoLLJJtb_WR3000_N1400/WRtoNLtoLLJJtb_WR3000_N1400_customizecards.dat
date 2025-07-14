@@ -6,3 +6,5 @@ set decay 9900012 AUTO
 set decay 9900014 AUTO
 set decay 9900016 10
 set decay 34 AUTO
+set decay 24 AUTO
+set decay 6 AUTO
