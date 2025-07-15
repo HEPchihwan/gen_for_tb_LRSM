@@ -1,0 +1,6 @@
+import model EffLRSM_NLO
+define ll = e+ e-
+define nn = n1
+generate p p > nn ll, (nn > ll t b~, (t > w+ b, w+ > j j))
+add process p p > nn ll, (nn > ll t~ b, (t~ > w- b~, w- > j j))
+output WRtoNLtoLLJJtb_WR2000_N300 --hel_recycling=False
