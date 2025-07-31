@@ -31,7 +31,7 @@ while (WRMASS <= WRMASSEND):
                 if "###SETMASS9900012" in line:
                     custonew.write(f"set param_card mass 9900012 {NMASS}\n")
                 elif "###SETMASS9900014" in line:
-                    custonew.write(f"set param_card mass 9900014 {NMASS}\n")
+                    custonew.write(f"set param_card mass 9900014 999999\n")
                 elif "###SETMASS9900016" in line:
                     custonew.write(f"set param_card mass 9900016 999999\n")
                 elif "###SETMASS34" in line:

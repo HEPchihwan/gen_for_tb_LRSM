@@ -29,7 +29,7 @@ while (WRMASS <= WRMASSEND):
         with open(f"{DIRNAME}/{DIRNAME}_customizecards.dat", "w") as custonew:
             for line in custolines:
                 if "###SETMASS9900012" in line:
-                    custonew.write(f"set param_card mass 9900012 {NMASS}\n")
+                    custonew.write(f"set param_card mass 9900012 999999\n")
                 elif "###SETMASS9900014" in line:
                     custonew.write(f"set param_card mass 9900014 {NMASS}\n")
                 elif "###SETMASS9900016" in line:
