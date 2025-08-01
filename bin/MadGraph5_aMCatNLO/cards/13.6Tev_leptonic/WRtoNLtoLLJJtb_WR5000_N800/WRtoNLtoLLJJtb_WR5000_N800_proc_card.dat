@@ -1,0 +1,6 @@
+import model EffLRSM_NLO
+define ll = mu+ mu-
+define nn = n2
+gernerate p p > nn ll, (nn > ll t b~, (t > w+ b, w+ > mu+ vm))
+add process p p > nn ll, (nn > ll t~ b, (t~ > w- b~, w- > mu- vm~))
+output WRtoNLtoLLJJtb_WR5000_N800 --hel_recycling=False
